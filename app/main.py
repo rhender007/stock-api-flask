@@ -7,7 +7,7 @@ from flask_restx import Api, Resource, fields
 
 # Fetch prices from local CSV using pandas
 prices = pd.read_csv(
-    os.path.join(os.path.dirname(__file__), "prices.csv"),
+    os.path.join(os.path.dirname(__file__), "..\prices.csv"),
     index_col=0,
     parse_dates=True,
 )
